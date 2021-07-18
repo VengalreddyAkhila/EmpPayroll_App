@@ -5,7 +5,7 @@ output.textContent = salary.value;
 salary.addEventListener('input',function() {
 output.textContent = salary.value;
  })
-
+//UC9-Adding getter setter method and validation to emppayroll app
 class EmployeePayrollData{
     //property
     id;
