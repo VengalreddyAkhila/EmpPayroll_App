@@ -76,6 +76,7 @@ text-transform: capitalize;
 .label{
     min-width: 140px;
 }
+
 label{
     padding: 12px 12px 12px 0;
     display: inline-block;
@@ -109,3 +110,20 @@ label{
     margin-left: 12px;
 }
 
+.labels{
+    margin-right: 20px;
+    margin-left: 12px;
+  }
+  
+  .slider{
+    min-width: 350px;
+  }
+  
+  .salaryContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider{
+    margin-right: 12px;
+  }

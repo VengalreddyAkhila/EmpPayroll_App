@@ -53,8 +53,41 @@
                 </label>
                 </div>
             </div>
-        </form>
+            <!-- UC4-Using radio button specify gender,department,and salary range -->
+            <div class ="row-content">
+                <label class="label text" for="gender" >Gender</label>
+                <div>
+                    <input type ="radio" id="male" name="gender" value="female">
+                    <label class="text" for="male">Male</label>
+                    <input type ="radio" id="Female" name="gender" value="female">
+                    <label class="text" for="Female">Female</label>
+                </div>
             </div>
-        </body>
-    </html>
+            <div class ="row-content">
+                <label class="label text" for="department" >Department</label>
+                <div>
+                    <input type ="checkbox" id="hr" name="hr" value="HR">
+                    <label class="text" for="hr">HR</label>
+                    <input type ="checkbox" id="sales" name="sales" value="Sales">
+                    <label class="text" for="sales">Sales</label>
+                    <input type ="checkbox" id="finance" name="finance" value="Finance">
+                    <label class="text" for="Finance">Finance</label>
+                    <input type ="checkbox" id="Engineer" name="engineer" value="Engineer">
+                    <label class="text" for="Engineer">Engineer</label>
+                    <input type ="checkbox" id="others" name="others" value="Others">
+                    <label class="text" for="Others">Others</label>
+                </div>
+            </div>        
+            <div class="row-content">
+                <div>
+                    <label for="salary">Choose your salary:</label>
+                    <input class="slider" type="range" name="salary" id="salary" min="300000"
+                    max="500000" step="100" value="400000">
+                    <output class="salary-output" for="salary">400000</output>
+                </div>
+            </div>            
+        </form>
+        </div>
+     </body>
+ </html>
                 
