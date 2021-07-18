@@ -26,6 +26,7 @@
                 <div class="row-content">
                      <label class="label text" for="name">FullName</label>
                      <input class="input" type="text" id="name" name="name" placeholder="YOUR NAME" required>
+                     <error-output class="text-error" for="text"></error-output>
                 </div> 
             <!-- UC-3 -->
             <div class="row-content">
@@ -161,15 +162,7 @@
                       </div>
                   </div>
         </form>
-        </div>
-        <script>
-            var salary = document.querySelector("#salary");
-var output=  document.querySelector(".salary-output");
-output.textContent = salary.value;
-salary.addEventListener('input',function() {
-output.textContent = salary.value;
- })
-        </script>
+        </div>        
         <!-- <script  src="..\EmpPayroll_App\Js\empwage.js"></script> -->
      </body>
  </html>
