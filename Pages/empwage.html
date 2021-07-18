@@ -5,11 +5,10 @@
         <meta name = "viewport" content="width=device-width, intial-scale=1.0">  
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/empwage.css" type="text/css"> 
-        <title>Employee Payroll</title>
-       
+        <script  defer src="..\Js\empwage.js"></script>
+        <title>Employee Payroll</title>       
         </head>
-        <body>
-            
+        <body>            
             <!-- UC1 -->
             <header class="header-content header">
                 <div class="logo-content">
@@ -25,8 +24,8 @@
                 <form class="form" action="#" onsubmit="save(event);return false">
                 <div class="form-head">Employee Payroll form</div>
                 <div class="row-content">
-                     <label class="label text" for="name">Name</label>
-                     <input class="input" type="text" id="name" name="name" placeholder="your name.." required>
+                     <label class="label text" for="name">FullName</label>
+                     <input class="input" type="text" id="name" name="name" placeholder="YOUR NAME" required>
                 </div> 
             <!-- UC-3 -->
             <div class="row-content">
@@ -62,6 +61,8 @@
                     <label class="text" for="male">Male</label>
                     <input type ="radio" id="Female" name="gender" value="female">
                     <label class="text" for="Female">Female</label>
+                    <input type ="radio" id="TransGender" name="transgender" value="TransGender">
+                    <label class="text" for="Transgender">Transgender</label>
                 </div>
             </div>
             <div class ="row-content">
@@ -161,7 +162,15 @@
                   </div>
         </form>
         </div>
-        <script  src="Js\empwage.js"></script>
+        <script>
+            var salary = document.querySelector("#salary");
+var output=  document.querySelector(".salary-output");
+output.textContent = salary.value;
+salary.addEventListener('input',function() {
+output.textContent = salary.value;
+ })
+        </script>
+        <!-- <script  src="..\EmpPayroll_App\Js\empwage.js"></script> -->
      </body>
  </html>
                 
