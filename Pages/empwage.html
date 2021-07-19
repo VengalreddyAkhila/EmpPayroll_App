@@ -12,7 +12,7 @@
             <!-- UC1 -->
             <header class="header-content header">
                 <div class="logo-content">
-                    <img src="..\Asserts\profile.png" alt="">
+                    <img src="..\Asserts\profile.png" alt="" width=100px height="100px">
                     <div>
                         <span class="emp-text">EMPLOYEE</span><br>
                         <span class="emp-text emp-payroll">PAYROLL</span>
@@ -94,7 +94,8 @@
              <div class="row-content">
                 <label class="label text" for="StartDate">Start Date: </label>
                 <div>
-                 <select class="day" name="day" id="day">
+                 <select class="day" name="day" id="day" value="0">
+                     <option value="0">Day</option>
                    <option value="1">1</option>
                    <option value="2">2</option>
                    <option value="3">3</option>
@@ -127,26 +128,28 @@
                    <option value="30">30</option>
                    <option value="31">31</option>
                  </select>
-                 <select class="month" name="month" id="month">
-                     <option value="january">January</option>
-                     <option value="febuary">Febuary</option>
-                     <option value="march">March</option>
-                     <option value="April">April</option>
-                     <option value="may">May</option>
-                     <option value="june">June</option>
-                     <option value="july">July</option>
-                     <option value="august">August</option>
-                     <option value="september">September</option>
-                     <option value="october">October</option>
-                     <option value="november">November</option>
-                     <option value="december">December</option>
+                 <select class="month" name="month" id="month" value="12">
+                     <option value="12">Month</option>
+                     <option value="0">January</option>
+                     <option value="1">Febuary</option>
+                     <option value="2">March</option>
+                     <option value="3">April</option>
+                     <option value="4">May</option>
+                     <option value="5">June</option>
+                     <option value="6">July</option>
+                     <option value="7">August</option>
+                     <option value="8">September</option>
+                     <option value="9">October</option>
+                     <option value="10">November</option>
+                     <option value="11">December</option>
                   </select>
-                  <select class="year" name="year" id="year">
+                  <select class="year" name="year" id="year" value="0">
+                  <option value="0">Year</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
                   <option value="2020">2020</option>
                   <option value="2019">2019</option>
                   <option value="2018">2018</option>
-                  <option value="2017">2017</option>
-                  <option value="2016">2016</option>
                   </select>
                   </div>
                   </div>

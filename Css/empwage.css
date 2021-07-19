@@ -170,6 +170,11 @@ error-output{
       background-color: lightblue;
       margin-right: 90px;
 }
+.submitButton:disabled {
+    background-color: grey;
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
 .cancelbutton{
       text-decoration: none;
       text-align: center;
@@ -187,6 +192,7 @@ error-output{
           width:85%;
           padding: 44px 20px;
       }
+    }
 @media only screen and (max-width:600px)   {
        .form{
            margin-top: 10px;
