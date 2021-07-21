@@ -78,4 +78,30 @@ var submit = document.querySelector("#submitbutton");
 submit.addEventListener("click", function(){
 alert(" "+ filepath +" "+ genderValue +""+ salary.value +""+ day.value  +" "+ month.value +" "+ year.value)
 });
+//save to local storage
 
+const submit = e =>{
+ let formData = {
+     name:document.getElementById('name').value,
+     profileImage:document.getElementById('profileImage').value,
+     gender:document.getElementById('gender').value,
+     department:document.getElementById('department').value,
+     startDate:department.getElementById('startDate').value
+ }
+//  localStorage.setItem('formData',JSON.stringify(formData));
+//  console.log(localStorage.getItem('formData'));
+//  e.preventDefault();
+//  }
+function createAndUpdateStorage(formData){
+  let empPayrollDataList=JSON.parse(localStorage.getItem("EmployeePayrollList"));
+  if(empPayrollDataList!=undefined)
+  {
+      empPayrollDataList.push(empPayrollData);
+  }else{
+      empPayrollDataList=[empPayrollData]
+  }
+  alert(empPayrollDataList.toString());
+  localStorage.setItem("EmloyeePayrollList",JSON.stringify(empPayrollDataList))
+}
+
+}
